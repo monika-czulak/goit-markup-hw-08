@@ -1,4 +1,12 @@
 body {
-  font-family: 'Raleway', sans-serif;
   font-family: 'Roboto', sans-serif;
+  color: #212121;
+}
+
+.logo {
+font-family: 'Raleway', sans-serif;
+}
+
+.button {
+  cursor: pointer;
 }
