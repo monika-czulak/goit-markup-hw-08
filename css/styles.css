@@ -42,6 +42,6 @@ body {
   color: var(--links-footer);
 }
 
-address {
+.contact {
   font-style: normal;
 }
