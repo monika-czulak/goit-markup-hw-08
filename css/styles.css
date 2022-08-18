@@ -1,47 +1,110 @@
 :root {
-  --blue: #2196f3;
-  --links-header: #757575;
-  --links-footer: #ffffff99;
-  --p-color: #757575;
-  --h-color: #212121;
-  --white: #ffffff;
-  --background: #2f303a;
-  --filter-buttons: #f5f4fa;
+  --active-color: #2196f3;
+  --logo-color: #000000;
+  --links-color-header: #757575;
+  --links-color-footer: #ffffff99;
+  --text-color-main: #757575;
+  --text-color-secondary: #212121;
+  --bg-color-white: #ffffff;
+  --bg-color-lightgrey: #e5e5e5;
+  --bg-color-grey: #f5f4fa;
+  --bg-color-darkgrey: #2f303a;
+  --filter-buttons-color: #f5f4fa;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
-  color: var(--h-color);
-  background-color: var(--white);
+  color: var(--text-color-main);
+  background-color: var(--bg-color-lightgrey);
+}
+.page-header {
+  background-color: var(--bg-color-white);
 }
 
 .logo {
   font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.174;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+  text-decoration: none;
 }
 
-.order-button,
-.filter-buttons button {
+.logo-color {
+  color: var(--active-color);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.nav-links .nav-link,
+.contact-links .contact-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.02em;
+}
+.nav-links .nav-link {
+  color: var(--text-color-secondary);
+}
+
+.nav-links .current-tab {
+  color: var(--active-color);
+}
+
+.contact-links .contact-link {
+  color: var(--links-color-header);
+}
+
+.main-section {
+  background-color: var(--bg-color-darkgrey);
+}
+
+.main-section .main-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  letter-spacing: 0.06em;
+  color: var(--bg-color-white);
+}
+
+.main-section .btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--bg-color-white);
+  background-color: var(--active-color);
+}
+
+.btn {
   cursor: pointer;
 }
 
-.current-tab {
-  color: var(--blue);
+.text-section,
+.services-section {
+  background-color: var(--bg-color-white)
 }
 
-.nav-links a:hover,
-.contact-links a:hover,
-.contact-links:hover {
-  color: var(--blue);
+.text-list .text-title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.172;
+  letter-spacing: 0.03em;
+  color: var(--text-color-secondary)
 }
 
-.contact-links a {
-  color: var(--links-header);
+.text-list .normal-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
 }
 
-.contact-links {
-  color: var(--links-footer);
-}
 
-.contact {
-  font-style: normal;
-}
+
+
+
+
