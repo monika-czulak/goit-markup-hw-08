@@ -9,15 +9,18 @@
   --bg-color-lightgrey: #e5e5e5;
   --bg-color-grey: #f5f4fa;
   --bg-color-darkgrey: #2f303a;
-  --filter-buttons-color: #f5f4fa;
 }
 
 body {
   font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   color: var(--text-color-main);
   background-color: var(--bg-color-lightgrey);
+  letter-spacing: 0.03em;
 }
-.page-header {
+
+.page-header,
+.page-main {
   background-color: var(--bg-color-white);
 }
 
@@ -26,7 +29,6 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.174;
-  letter-spacing: 0.03em;
   color: var(--logo-color);
   text-decoration: none;
 }
@@ -58,7 +60,8 @@ body {
   color: var(--links-color-header);
 }
 
-.main-section {
+.main-section,
+.page-footer {
   background-color: var(--bg-color-darkgrey);
 }
 
@@ -72,7 +75,6 @@ body {
 
 .main-section .btn {
   font-weight: 700;
-  font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
   color: var(--bg-color-white);
@@ -80,31 +82,92 @@ body {
 }
 
 .btn {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
   cursor: pointer;
 }
 
 .text-section,
 .services-section {
-  background-color: var(--bg-color-white)
+  background-color: var(--bg-color-white);
 }
 
 .text-list .text-title {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.172;
+  color: var(--text-color-secondary);
+}
+
+.text-list .normal-text,
+.address {
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.services-section .section-title,
+.team-section .section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.172;
+  color: var(--text-color-secondary);
+}
+
+.team-section {
+  background-color: var(--bg-color-grey);
+}
+
+.team-card-name,
+.team-card-profession {
+  line-height: 1.172;
+}
+
+.team-card-name {
+  color: var(--text-color-secondary);
+  font-weight: 500;
+}
+
+.page-footer .logo {
+  color: var(--bg-color-white);
+}
+
+.address {
+  color: var(--bg-color-white);
+  font-style: normal;
+}
+
+.address .contact-link {
+  color: var(--links-color-footer);
+}
+
+.filter-list .btn {
+  font-weight: 500;
+  line-height: 1.625;
   letter-spacing: 0.03em;
+  color: var(--text-color-secondary);
+  background-color: var(--bg-color-grey)
+}
+
+.filter-list .btn:hover,
+.filter-list .btn:focus {
+  color: var(--bg-color-white);
+  background-color: var(--active-color)
+}
+
+.page-header .nav-link:hover,
+.page-header .nav-link:focus,
+.page-header .contact-link:hover,
+.page-header .contact-link:focus {
+  color: var(--active-color)
+}
+
+.product-card-heading {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
   color: var(--text-color-secondary)
 }
 
-.text-list .normal-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
-  letter-spacing: 0.03em;
+.product-card-text {
+  line-height: 1.875;
 }
-
-
-
-
-
-
