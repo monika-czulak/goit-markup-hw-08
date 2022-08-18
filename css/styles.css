@@ -145,27 +145,27 @@ body {
   line-height: 1.625;
   letter-spacing: 0.03em;
   color: var(--text-color-secondary);
-  background-color: var(--bg-color-grey)
+  background-color: var(--bg-color-grey);
 }
 
 .filter-list .btn:hover,
 .filter-list .btn:focus {
   color: var(--bg-color-white);
-  background-color: var(--active-color)
+  background-color: var(--active-color);
 }
 
-.page-header .nav-link:hover,
-.page-header .nav-link:focus,
-.page-header .contact-link:hover,
-.page-header .contact-link:focus {
-  color: var(--active-color)
+.nav-link:hover,
+.nav-link:focus,
+.contact-link:hover,
+.contact-link:focus {
+  color: var(--active-color);
 }
 
 .product-card-heading {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
-  color: var(--text-color-secondary)
+  color: var(--text-color-secondary);
 }
 
 .product-card-text {
