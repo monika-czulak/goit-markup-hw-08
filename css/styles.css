@@ -1,10 +1,11 @@
 :root {
   --active-color: #2196f3;
-  --logo-color: #000000;
+  --logo-color-header: #000000;
+  --logo-color-footer: #ffffff;
   --links-color-header: #757575;
   --links-color-footer: #ffffff99;
-  --text-color-main: #757575;
-  --text-color-secondary: #212121;
+  --text-color-light: #757575;
+  --text-color-dark: #212121;
   --bg-color-white: #ffffff;
   --bg-color-lightgrey: #e5e5e5;
   --bg-color-grey: #f5f4fa;
@@ -14,9 +15,10 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  color: var(--text-color-main);
-  background-color: var(--bg-color-lightgrey);
+  line-height: 1.172;
   letter-spacing: 0.03em;
+  color: var(--text-color-light);
+  background-color: var(--bg-color-lightgrey);
 }
 
 .page-header,
@@ -29,7 +31,7 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.174;
-  color: var(--logo-color);
+  color: var(--logo-color-header);
   text-decoration: none;
 }
 
@@ -45,11 +47,10 @@ body {
 .contact-links .contact-link {
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.172;
   letter-spacing: 0.02em;
 }
 .nav-links .nav-link {
-  color: var(--text-color-secondary);
+  color: var(--text-color-dark);
 }
 
 .nav-links .current-tab {
@@ -60,12 +61,12 @@ body {
   color: var(--links-color-header);
 }
 
-.main-section,
+.section-dark,
 .page-footer {
   background-color: var(--bg-color-darkgrey);
 }
 
-.main-section .main-title {
+.page-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.364;
@@ -73,7 +74,7 @@ body {
   color: var(--bg-color-white);
 }
 
-.main-section .btn {
+.order-btn {
   font-weight: 700;
   line-height: 1.875;
   letter-spacing: 0.06em;
@@ -87,7 +88,7 @@ body {
   cursor: pointer;
 }
 
-.text-section,
+.section-light,
 .services-section {
   background-color: var(--bg-color-white);
 }
@@ -95,8 +96,7 @@ body {
 .text-list .text-title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 1.172;
-  color: var(--text-color-secondary);
+  color: var(--text-color-dark);
 }
 
 .text-list .normal-text,
@@ -105,30 +105,23 @@ body {
   line-height: 1.714;
 }
 
-.services-section .section-title,
-.team-section .section-title {
+.section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.172;
-  color: var(--text-color-secondary);
+  color: var(--text-color-dark);
 }
 
-.team-section {
+.section-grey {
   background-color: var(--bg-color-grey);
 }
 
-.team-card-name,
-.team-card-profession {
-  line-height: 1.172;
-}
-
 .team-card-name {
-  color: var(--text-color-secondary);
+  color: var(--text-color-dark);
   font-weight: 500;
 }
 
 .page-footer .logo {
-  color: var(--bg-color-white);
+  color: var(--logo-color-footer);
 }
 
 .address {
@@ -140,16 +133,16 @@ body {
   color: var(--links-color-footer);
 }
 
-.filter-list .btn {
+.filter-btn {
   font-weight: 500;
   line-height: 1.625;
   letter-spacing: 0.03em;
-  color: var(--text-color-secondary);
+  color: var(--text-color-dark);
   background-color: var(--bg-color-grey);
 }
 
-.filter-list .btn:hover,
-.filter-list .btn:focus {
+.filter-btn:hover,
+.filter-btn:focus {
   color: var(--bg-color-white);
   background-color: var(--active-color);
 }
@@ -165,7 +158,7 @@ body {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
-  color: var(--text-color-secondary);
+  color: var(--text-color-dark);
 }
 
 .product-card-text {
