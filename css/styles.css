@@ -15,7 +15,7 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-  line-height: 1.172;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--text-color-light);
   background-color: var(--bg-color-lightgrey);
@@ -30,7 +30,6 @@ body {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.174;
   color: var(--logo-color-header);
   text-decoration: none;
 }
@@ -69,14 +68,14 @@ body {
 .page-title {
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.364;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   color: var(--bg-color-white);
 }
 
 .order-btn {
   font-weight: 700;
-  line-height: 1.875;
+  line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--bg-color-white);
   background-color: var(--active-color);
@@ -102,7 +101,7 @@ body {
 .text-list .normal-text,
 .address {
   font-size: 14px;
-  line-height: 1.714;
+  line-height: 1.71;
 }
 
 .section-title {
@@ -135,7 +134,7 @@ body {
 
 .filter-btn {
   font-weight: 500;
-  line-height: 1.625;
+  line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--text-color-dark);
   background-color: var(--bg-color-grey);
@@ -162,5 +161,5 @@ body {
 }
 
 .product-card-text {
-  line-height: 1.875;
+  line-height: 1.87;
 }
