@@ -163,3 +163,39 @@ body {
 .product-card-text {
   line-height: 1.87;
 }
+
+ul,
+h1 {
+  list-style: none;
+  margin: 0;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.menu,
+.page-header .container,
+.nav-links,
+.contact-links {
+  display: flex;
+  align-items: center;
+  gap: 46px;
+}
+
+.page-header .container {
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  background-color: var(--bg-color-white);
+}
+
+.contact-links {
+  padding-left: 280px;
+}
+
+
