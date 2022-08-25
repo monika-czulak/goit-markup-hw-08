@@ -22,6 +22,30 @@ body {
   color: var(--text-color-light);
   background-color: var(--bg-color-lightgrey);
 }
+ul,
+h1,
+h2,
+h3,
+p {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+}
+
+.wrapper {
+  width: 1600px;
+  margin: 0 auto;
+  background-color: var(--bg-color-white);
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .page-header,
 .page-main {
@@ -113,12 +137,6 @@ body {
   line-height: 1.71;
 }
 
-.section-title {
-  font-weight: 700;
-  font-size: 36px;
-  color: var(--text-color-dark);
-}
-
 .section-grey {
   background-color: var(--bg-color-grey);
 }
@@ -126,15 +144,23 @@ body {
 .team-card-name {
   color: var(--text-color-dark);
   font-weight: 500;
+  margin: 30px 0 10px;
 }
 
 .page-footer .logo {
   color: var(--logo-color-footer);
 }
 
+.page-footer {
+  padding: 60px 0;
+}
+
 .address {
   color: var(--bg-color-white);
   font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
 }
 
 .address .contact-link {
@@ -164,6 +190,7 @@ body {
 }
 
 .product-card-heading {
+  margin: 20px 24px 4px;
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -172,20 +199,7 @@ body {
 
 .product-card-text {
   line-height: 1.87;
-}
-
-ul,
-h1,
-h2,
-h3,
-p {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-.container {
-  width: 1200px;
-  margin: 0 auto;
+  margin: 0 24px 20px;
 }
 
 .menu,
@@ -200,12 +214,6 @@ p {
 .page-header .container {
   justify-content: space-between;
   padding: 24px 0;
-}
-
-.wrapper {
-  width: 1600px;
-  margin: 0 auto;
-  background-color: var(--bg-color-white);
 }
 
 .contact-links {
@@ -243,6 +251,9 @@ p {
 .section-title {
   text-align: center;
   margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  color: var(--text-color-dark);
 }
 
 .services-list,
@@ -253,10 +264,6 @@ p {
   gap: 30px;
 }
 
-img {
-  display: block;
-}
-
 .team-card {
   margin: auto 0;
   padding: 0 0 30px 0;
@@ -265,20 +272,6 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   text-align: center;
-}
-
-.team-card-name {
-  margin: 30px 0 10px;
-}
-
-.page-footer {
-  padding: 60px 0;
-}
-
-.address {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
 }
 
 .contact {
@@ -306,12 +299,4 @@ img {
   flex-basis: calc((100% - 2 * 30px) / 3);
   background: var(--bg-color-white);
   border-bottom: 1px solid var(--border-card);
-}
-
-.product-card-heading {
-  margin: 20px 24px 4px;
-}
-
-.product-card-text {
-  margin: 0 24px 20px;
 }
