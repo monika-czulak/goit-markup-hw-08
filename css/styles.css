@@ -11,6 +11,7 @@
   --bg-color-grey: #f5f4fa;
   --bg-color-darkgrey: #2f303a;
   --border-header: #ececec;
+  --border-card: #eeeeee;
 }
 
 body {
@@ -141,6 +142,7 @@ body {
 }
 
 .filter-btn {
+  padding: 6px 22px;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
@@ -224,6 +226,11 @@ p {
 .section {
   padding: 94px 0 94px;
 }
+
+.no-bottom-padding {
+  padding: 94px 0 0;
+}
+
 .text-list {
   display: flex;
   justify-content: center;
@@ -250,10 +257,6 @@ img {
   display: block;
 }
 
-.section:nth-of-type(2) {
-  padding: 94px 0 0;
-}
-
 .team-card {
   margin: auto 0;
   padding: 0 0 30px 0;
@@ -261,15 +264,11 @@ img {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  text-align: center;
 }
 
 .team-card-name {
   margin: 30px 0 10px;
-  text-align: center;
-}
-
-.team-card-profession {
-  text-align: center;
 }
 
 .page-footer {
@@ -283,5 +282,36 @@ img {
 }
 
 .contact {
-  margin-top: 20px;;
+  margin-top: 20px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-basis: calc((100% - 2 * 30px) / 3);
+}
+
+.product-card {
+  margin: 0;
+  flex-basis: calc((100% - 2 * 30px) / 3);
+  background: var(--bg-color-white);
+  border-bottom: 1px solid var(--border-card);
+}
+
+.product-card-heading {
+  margin: 20px 24px 4px;
+}
+
+.product-card-text {
+  margin: 0 24px 20px;
 }
