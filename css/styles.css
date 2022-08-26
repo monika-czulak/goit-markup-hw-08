@@ -22,6 +22,7 @@ body {
   color: var(--text-color-light);
   background-color: var(--bg-color-lightgrey);
 }
+
 ul,
 h1,
 h2,
@@ -34,12 +35,6 @@ p {
 
 img {
   display: block;
-}
-
-.wrapper {
-  width: 1600px;
-  margin: 0 auto;
-  background-color: var(--bg-color-white);
 }
 
 .container {
