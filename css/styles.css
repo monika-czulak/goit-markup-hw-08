@@ -227,7 +227,7 @@ img {
 }
 
 .section {
-  padding: 94px 0 94px;
+  padding: 94px 0;
 }
 
 .no-bottom-padding {
@@ -237,10 +237,7 @@ img {
 .text-list {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 30px;
-  flex-basis: 270px;
-  padding: 0 10px;
 }
 
 .section-title {
@@ -254,7 +251,7 @@ img {
 .services-list,
 .team-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
@@ -276,15 +273,14 @@ img {
 .filter-list {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 8px;
+  margin-bottom: 50px;
 }
 
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   gap: 30px;
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
