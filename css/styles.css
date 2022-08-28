@@ -114,8 +114,7 @@ img {
   border-style: none;
 }
 
-.section-light,
-.services-section {
+.section-light {
   background-color: var(--bg-color-white);
 }
 
@@ -280,7 +279,7 @@ img {
 .product-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   gap: 30px;
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
@@ -290,4 +289,13 @@ img {
   flex-basis: calc((100% - 2 * 30px) / 3);
   background: var(--bg-color-white);
   border-bottom: 1px solid var(--border-card);
+}
+
+.icon-envelope {
+  fill: var(--links-color-header);
+  margin-right: 10px;
+}
+
+.contact-link:hover .icon-envelope {
+  fill: var(--active-color);
 }
