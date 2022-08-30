@@ -7,11 +7,15 @@
   --text-color-light: #757575;
   --text-color-dark: #212121;
   --bg-color-white: #ffffff;
+  --bg-color-transparentblack: #ffffff1a;
   --bg-color-lightgrey: #e5e5e5;
   --bg-color-grey: #f5f4fa;
   --bg-color-darkgrey: #2f303a;
   --border-header: #ececec;
   --border-card: #eeeeee;
+  --social-icons: #afb1b8;
+  --social-icons-footer: #ffffff;
+  --client-logos: #afb1b8;
 }
 
 body {
@@ -96,6 +100,10 @@ img {
   text-align: center;
 }
 
+.bg-image {
+  background-image: 
+}
+
 .order-btn {
   padding: 10px 42px;
   font-weight: 700;
@@ -150,7 +158,7 @@ img {
 }
 
 .address {
-  color: var(--bg-color-white);
+  color: var(--logo-color-footer);
   font-style: normal;
   display: flex;
   flex-direction: column;
@@ -291,11 +299,98 @@ img {
   border-bottom: 1px solid var(--border-card);
 }
 
-.icon-envelope {
-  fill: var(--links-color-header);
+.icon-spacing {
   margin-right: 10px;
 }
 
-.contact-link:hover .icon-envelope {
+.icons-header {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  fill: currentColor;
+}
+
+.text-icon {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--bg-color-grey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.team-card-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+.team-card-icon {
+  width: 44px;
+  height: 44px;
+  fill: var(--social-icons);
+  background-color: var(--bg-color-white);
+  border-radius: 50%;
+}
+
+.team-card-icon:hover,
+.team-card-icon:focus {
+  fill: var(--bg-color-white);
+  background-color: var(--active-color);
+}
+
+.client-logo-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.client-logo {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--client-logos);
+  border-radius: 4px;
+  fill: var(--client-logos);
+}
+
+.client-logo:hover,
+.client-logo:focus {
   fill: var(--active-color);
+  border: 1px solid var(--active-color);
+}
+
+.page-footer .container {
+  display: flex;
+  gap: 70px;
+}
+
+.footer-list {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.footer-icon {
+  width: 44px;
+  height: 44px;
+  fill: var(--social-icons-footer);
+  border-radius: 50%;
+  background-color: var(--bg-color-transparentblack);
+}
+
+.footer-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--logo-color-footer);
+  margin-top: 12px;
+}
+
+.footer-icon:hover,
+.footer-icon:focus {
+  background-color: var(--active-color);
 }
