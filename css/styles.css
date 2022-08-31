@@ -87,7 +87,7 @@ img {
   color: var(--links-color-header);
 }
 
-.section-dark,
+.page-main .section-dark,
 .page-footer {
   background-color: var(--bg-color-darkgrey);
 }
@@ -228,7 +228,8 @@ img {
   margin-left: 280px;
 }
 
-.page-main .section-dark {
+/* .page-main .section-dark, */
+.header-image {
   padding: 200px 0;
 }
 .section-dark .container {
@@ -245,6 +246,10 @@ img {
 
 .no-bottom-padding {
   padding: 94px 0 0;
+}
+
+.no-padding {
+  padding: 0;
 }
 
 .text-list {
