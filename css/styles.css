@@ -307,7 +307,7 @@ img {
   margin: 0;
   flex-basis: calc((100% - 2 * 30px) / 3);
   background: var(--bg-color-white);
-  border-bottom: 1px solid var(--border-card);
+  border: 1px solid var(--border-card);
 }
 
 .product-card:hover,
