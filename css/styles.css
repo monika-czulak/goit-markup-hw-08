@@ -377,7 +377,7 @@ img {
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-box:hover .product-overlay {
+.product-card:hover .product-overlay {
   transform: translatey(0);
 }
 
