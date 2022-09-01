@@ -47,7 +47,7 @@
             <div class="container header-image">
                 <h1 class="page-title">EFEKTYWNE ROZWIĄZANIA <br>
                     DLA WASZEGO BIZNESU</h1>
-                <button type="button" class="btn order-btn">Zamów usługę</button>
+                <button type="button" class="btn order-btn" data-modal-open>Zamów usługę</button>
             </div>
         </section>
         <section class="section section-light no-bottom-padding">
@@ -110,13 +110,16 @@
                 <ul class="services-list">
                     <li>
                         <img src="./images/img-computer.jpg" alt="programowanie" width="370" height="294">
+                        <p class="service-desc">aplikacje komputerowe</p>
                     </li>
                     <li>
                         <img src="./images/img-smartfon.jpg" alt="tworzenie aplikacji mobilnej" width="370"
                             height="294">
+                        <p class="service-desc">aplikacje mobilne</p>
                     </li>
                     <li>
                         <img src="./images/img-tablet.jpg" alt="projektowanie" width="370" height="294">
+                        <p class="service-desc">rozwiązania graficzne</p>
                     </li>
                 </ul>
             </div>
@@ -324,21 +327,40 @@
                 <h3 class="footer-title">DOŁĄCZ DO NAS</h3>
                 <ul class="footer-list">
                     <li><a href="">
-                        <svg class="footer-icon" width="44" height="44"><use href="./images/icons.svg#icon-instagram-2" width="20" height="20" x="12" y="12"></use></svg>
-                    </a></li>
+                            <svg class="footer-icon" width="44" height="44">
+                                <use href="./images/icons.svg#icon-instagram-2" width="20" height="20" x="12" y="12">
+                                </use>
+                            </svg>
+                        </a></li>
                     <li><a href="">
-                        <svg class="footer-icon" width="44" height="44"><use href="./images/icons.svg#icon-twitter-1" width="20" height="20" x="12" y="12"></use></svg>
-                    </a></li>
+                            <svg class="footer-icon" width="44" height="44">
+                                <use href="./images/icons.svg#icon-twitter-1" width="20" height="20" x="12" y="12">
+                                </use>
+                            </svg>
+                        </a></li>
                     <li><a href="">
-                        <svg class="footer-icon" width="44" height="44"><use href="./images/icons.svg#icon-facebook-1" width="20" height="20" x="12" y="12"></use></svg>
-                    </a></li>
+                            <svg class="footer-icon" width="44" height="44">
+                                <use href="./images/icons.svg#icon-facebook-1" width="20" height="20" x="12" y="12">
+                                </use>
+                            </svg>
+                        </a></li>
                     <li><a href="">
-                        <svg class="footer-icon" width="44" height="44"><use href="./images/icons.svg#icon-linkedin-1" width="20" height="20" x="12" y="12"></use></svg>
-                    </a></li>
+                            <svg class="footer-icon" width="44" height="44">
+                                <use href="./images/icons.svg#icon-linkedin-1" width="20" height="20" x="12" y="12">
+                                </use>
+                            </svg>
+                        </a></li>
                 </ul>
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal"><button type="button" class="close-btn" data-modal-close>x</button></div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
