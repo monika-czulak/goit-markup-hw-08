@@ -20,8 +20,7 @@
   --background-backdrop: rgba(0, 0, 0, 0.2);
   --modal-btn: rgba(0, 0, 0, 0.1);
   --services-description: #ffffff;
-  --bg-overlay: #2196F3E5;
-
+  --bg-overlay: #2196f3e5;
 }
 
 body {
@@ -133,6 +132,11 @@ img {
   color: var(--bg-color-white);
   background-color: var(--active-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.order-btn:hover {
+  transform: scale(1.05);
 }
 
 .btn {
@@ -362,7 +366,7 @@ img {
   overflow: hidden;
 }
 
-.product-overlay{
+.product-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -516,5 +520,3 @@ img {
 }
 
 /* --- koniec okna modalnego --- */
-
-
