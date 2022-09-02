@@ -352,11 +352,48 @@
                         </a></li>
                 </ul>
             </div>
+            <div footer-form>
+                <h3 class="footer-title">ZAPISZ SIĘ DO NEWSLETTERA</h3>
+                <form class="footer-form">
+                    <label>
+                        <input type="email" name="email" placeholder="E-mail">
+                    </label>
+                    <button type="submit" class="btn signin-btn">Zapisz się<svg class="footer-form-icon" width="24"
+                            height="24">
+                            <use href="./images/icons.svg#icon-icon-send"></use>
+                        </svg></button>
+                </form>
+            </div>
         </div>
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
-        <div class="modal"><button type="button" class="close-btn" data-modal-close>x</button></div>
+        <div class="modal">
+            <button type="button" class="close-btn" data-modal-close>x</button>
+            <h4 class="modal-header">Zostaw swoje dane w formularzu poniżej</h4>
+            <form class="modal-form">
+                <label class="form-item">
+                    Imię
+                    <input type="name" name="name" class="form-input">
+                </label>
+                <label class="form-item">
+                    Telefon
+                    <input type="phone" name="phone" class="form-input">
+                </label>
+                <label class="form-item">
+                    Email
+                    <input type="email" name="email" class="form-input">
+                </label>
+                <label class="form-item">
+                    Komentarz
+                    <textarea name="comment" class="form-input form-comment" placeholder="Wprowadź tekst"></textarea>
+                </label>
+                <label class="form-item">
+                    <input type="checkbox">Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę Prywatności</a>.
+                </label>
+            </form>
+
+        </div>
     </div>
 
     <script src="./js/modal.js"></script>

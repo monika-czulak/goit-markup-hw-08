@@ -21,6 +21,7 @@
   --modal-btn: rgba(0, 0, 0, 0.1);
   --services-description: #ffffff;
   --bg-overlay: #2196f3e5;
+  --footer-input-brd: #ffffff4d;
 }
 
 body {
@@ -36,6 +37,7 @@ ul,
 h1,
 h2,
 h3,
+h4,
 p {
   padding: 0;
   margin: 0;
@@ -124,7 +126,8 @@ img {
   margin: 0 auto;
 }
 
-.order-btn {
+.order-btn,
+.signin-btn {
   padding: 10px 42px;
   font-weight: 700;
   line-height: 1.87;
@@ -135,7 +138,10 @@ img {
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.order-btn:hover {
+.order-btn:hover,
+.order-btn:focus,
+.signin-btn:hover,
+.signin-btn:focus {
   transform: scale(1.05);
 }
 
@@ -431,7 +437,7 @@ img {
 
 .client-logo-list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
@@ -451,6 +457,7 @@ img {
 
 .page-footer .container {
   display: flex;
+  justify-content: space-between;
   gap: 70px;
 }
 
@@ -499,6 +506,8 @@ img {
   width: 528px;
   min-height: 581px;
   background-color: #fff;
+  font-size: 12px;
+  border-radius: 4px;
 }
 
 .close-btn {
@@ -519,4 +528,54 @@ img {
   pointer-events: none;
 }
 
+.modal-form,
+.form-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  font-size: 20px;
+  color: var(--text-color-dark);
+  text-align: center;
+  margin-top: 40px;
+}
+
 /* --- koniec okna modalnego --- */
+
+/* --- newsletter --- */
+
+.footer-form {
+  display: flex;
+}
+
+.footer-form input[type='email'] {
+  background-color: transparent;
+  padding: 15px 157px 15px 16px;
+  border: 1px solid var(--footer-input-brd);
+  border-radius: 4px;
+  margin-top: 20px;
+  color: var(--logo-color-footer);
+  outline: none;
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.signin-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 12px;
+  padding-right: 28px;
+}
+
+.footer-form-icon {
+  margin-left: 24px;
+}
+
+.footer-form input[type='email']:hover,
+.footer-form input[type='email']:focus {
+  border: 1px solid var(--active-color);
+}
+
+/* --- koniec newslettera --- */
