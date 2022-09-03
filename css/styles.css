@@ -532,14 +532,26 @@ img {
 .form-item {
   display: flex;
   flex-direction: column;
+  width: 448px;
+  margin: auto;
 }
 
 .modal-header {
   font-size: 20px;
   color: var(--text-color-dark);
   text-align: center;
-  margin-top: 40px;
+  margin: 40px 0 12px;
 }
+
+.form-input {
+  margin-top: 4px;
+  height: 40px;
+}
+
+.modal-form {
+  gap: 10px;
+}
+
 
 /* --- koniec okna modalnego --- */
 
