@@ -260,10 +260,6 @@ img {
   padding: 24px 0;
 }
 
-.contact-links {
-  margin-left: 280px;
-}
-
 .header-image {
   padding: 200px 0;
 }
@@ -529,6 +525,7 @@ img {
 
 .close-icon {
   fill: var(--logo-color-header);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .is-hidden {
@@ -540,6 +537,7 @@ img {
 .modal-form,
 .form-item {
   display: flex;
+  position: relative;
   flex-direction: column;
   width: 448px;
   margin: auto;
@@ -625,22 +623,9 @@ img {
 .form-icon {
   fill: var(--text-color-dark);
   position: absolute;
+  top: 50%;
+  left: 10px;
   transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1), fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.icon-position-st {
-  top: 103px;
-  left: 52px;
-}
-
-.icon-position-nd {
-  top: 170px;
-  left: 52px;
-}
-
-.icon-position-rd {
-  top: 238px;
-  left: 52px;
 }
 
 .form-input:hover,
@@ -651,6 +636,20 @@ img {
 .form-item:hover .form-icon,
 .form-item:focus-within .form-icon {
   fill: var(--active-color);
+}
+
+.form-checkbox a:hover,
+.form-checkbox a:focus {
+  opacity: 0.5;
+}
+
+.form-checkbox a {
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover .close-icon,
+.close-btn:focus .close-icon {
+  opacity: 0.5;
 }
 
 /* --- koniec okna modalnego --- */
