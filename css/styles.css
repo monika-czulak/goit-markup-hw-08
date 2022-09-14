@@ -611,19 +611,6 @@ img {
   display: none;
 }
 
-/* .hidden:checked .check-icon {
-  background-color: var(--active-color);
-  fill: var(--bg-color-white);
-  border: none;
-} */
-
-/* .check-icon {
-  border: 2px solid var(--text-color-light);
-  border-radius: 2px;
-  fill: var(--bg-color-white);
-  cursor: pointer;
-} */
-
 .send-btn {
   padding: 10px 76px;
 }
