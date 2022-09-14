@@ -585,20 +585,47 @@ img {
   color: var(--active-color);
 }
 
-.form-checkbox input[type='checkbox'] {
-  appearance: none;
+.checkbox-custom {
+  -moz-appearance: none;
   -webkit-appearance: none;
+  appearance: none;
+  border: 1px solid var(--text-color-light);
+  border-radius: 2px;
+  cursor: pointer;
+  width: 16px;
+  height: 15px;
+}
+
+.checkbox-custom:checked + .check-icon {
+  display: block;
+  background-color: var(--active-color);
+  fill: var(--bg-color-white);
+  border-radius: 2px;
+}
+
+.checkbox-custom:checked {
+  display: none;
 }
 
 .check-icon {
+  display: none;
+}
+
+/* .hidden:checked .check-icon {
+  background-color: var(--active-color);
+  fill: var(--bg-color-white);
+  border: none;
+} */
+
+/* .check-icon {
   border: 2px solid var(--text-color-light);
   border-radius: 2px;
   fill: var(--bg-color-white);
   cursor: pointer;
-}
+} */
 
 .send-btn {
-  width: 200px;
+  padding: 10px 76px;
 }
 
 /* --- koniec okna modalnego --- */
