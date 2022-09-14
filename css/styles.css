@@ -435,7 +435,7 @@ img {
 }
 
 .team-card-icon:hover,
-.team-card-icon:focus {
+.team-card-icons .link:focus .team-card-icon {
   fill: var(--bg-color-white);
   background-color: var(--active-color);
 }
@@ -455,7 +455,7 @@ img {
 }
 
 .client-logo:hover,
-.client-logo:focus {
+.client-logo-list .link:focus .client-logo{
   fill: var(--active-color);
   border: 1px solid var(--active-color);
 }
@@ -487,7 +487,7 @@ img {
 }
 
 .footer-icon:hover,
-.footer-icon:focus {
+.footer-list a:focus .footer-icon{
   background-color: var(--active-color);
 }
 
@@ -527,6 +527,10 @@ img {
   cursor: pointer;
 }
 
+.close-icon {
+  fill: var(--logo-color-header);
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
@@ -553,6 +557,9 @@ img {
   height: 40px;
   border: 1px solid var(--form-brd);
   border-radius: 4px;
+  padding-left: 40px;
+  outline: none;
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form {
@@ -615,6 +622,37 @@ img {
   padding: 10px 76px;
 }
 
+.form-icon {
+  fill: var(--text-color-dark);
+  position: absolute;
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1), fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-position-st {
+  top: 103px;
+  left: 52px;
+}
+
+.icon-position-nd {
+  top: 170px;
+  left: 52px;
+}
+
+.icon-position-rd {
+  top: 238px;
+  left: 52px;
+}
+
+.form-input:hover,
+.form-input:focus {
+  border: 1px solid var(--active-color);
+}
+
+.form-item:hover .form-icon,
+.form-item:focus-within .form-icon {
+  fill: var(--active-color);
+}
+
 /* --- koniec okna modalnego --- */
 
 /* --- newsletter --- */
@@ -630,8 +668,8 @@ img {
   border-radius: 4px;
   margin-top: 20px;
   color: var(--logo-color-footer);
-  outline: none;
   transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
 }
 
 .signin-btn {
