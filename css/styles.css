@@ -95,6 +95,7 @@ img {
 
 .nav-links .current-tab {
   color: var(--active-color);
+  position: relative;
 }
 
 .current-tab::after {
@@ -104,7 +105,8 @@ img {
   height: 4px;
   background-color: #2196f3;
   border-radius: 2px;
-  transform: translateY(29px);
+  position: absolute;
+  top: 44px;
 }
 
 .contact-links .contact-link {
