@@ -88,6 +88,11 @@ img {
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.header-menu {
+  display: flex;
+  gap: 93px;
+}
+
 .nav-links .current-tab {
   color: var(--active-color);
 }
@@ -246,7 +251,7 @@ img {
   margin: 0 24px 20px;
 }
 
-.menu,
+.nav-menu,
 .page-header .container,
 .nav-links,
 .contact-links {

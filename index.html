@@ -19,26 +19,30 @@
 <body>
     <header class="page-header">
         <div class="container">
-            <a href="./index.html" class="link logo"><span class="logo-color">Web</span>Studio</a>
-            <nav class="menu">
-                <ul class="nav-links">
-                    <li><a href="./index.html" class="link nav-link current-tab">Agencja</a></li>
-                    <li><a href="./portfolio.html" class="link nav-link">Portfolio</a></li>
-                    <li><a href="" class="link nav-link">Kontakt</a></li> 
+            <div class="header-menu">
+                <a href="./index.html" class="link logo"><span class="logo-color">Web</span>Studio</a>
+                <nav class="nav-menu">
+                    <ul class="nav-links">
+                        <li><a href="./index.html" class="link nav-link current-tab">Agencja</a></li>
+                        <li><a href="./portfolio.html" class="link nav-link">Portfolio</a></li>
+                        <li><a href="" class="link nav-link">Kontakt</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <ul class="contact-links">
+                    <li><a href="mailto:info@devstudio.com" class="link contact-link icons-header">
+                            <svg class="icon-spacing" width="16" height="12">
+                                <use href="./images/icons.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com</a></li>
+                    <li><a href="tel:+48111111111" class="link contact-link icons-header">
+                            <svg class="icon-spacing" width="10" height="16">
+                                <use href="./images/icons.svg#icon-smartphone"></use>
+                            </svg>
+                            +48 111 111 111</a></li>
                 </ul>
-            </nav>
-            <ul class="contact-links">
-                <li><a href="mailto:info@devstudio.com" class="link contact-link icons-header">
-                        <svg class="icon-spacing" width="16" height="12">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a></li>
-                <li><a href="tel:+48111111111" class="link contact-link icons-header">
-                        <svg class="icon-spacing" width="10" height="16">
-                            <use href="./images/icons.svg#icon-smartphone"></use>
-                        </svg>
-                        +48 111 111 111</a></li>
-            </ul>
+            </div>
         </div>
     </header>
 
@@ -369,23 +373,31 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button" class="close-btn" data-modal-close><svg class="close-icon" width="17" height="17"><use href="./images/icons.svg#icon-close-black-18dp-2-1" width="17" height="17" y="2" x="-1"></use></svg></button>
+            <button type="button" class="close-btn" data-modal-close><svg class="close-icon" width="17" height="17">
+                    <use href="./images/icons.svg#icon-close-black-18dp-2-1" width="17" height="17" y="2" x="-1"></use>
+                </svg></button>
             <h4 class="modal-header">Zostaw swoje dane w formularzu poniżej</h4>
             <form class="modal-form">
                 <label class="form-item">
                     Imię
                     <input type="name" name="name" class="form-input">
-                    <svg class="form-icon" width="18" height="18"><use href="./images/icons.svg#icon-person-black-18dp-1" width="20" height="20"></use></svg>
+                    <svg class="form-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-person-black-18dp-1" width="20" height="20"></use>
+                    </svg>
                 </label>
                 <label class="form-item">
                     Telefon
                     <input type="phone" name="phone" class="form-input">
-                    <svg class="form-icon" width="18" height="18"><use href="./images/icons.svg#icon-phone-black-18dp-1" width="20" height="20"></use></svg>
+                    <svg class="form-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-phone-black-18dp-1" width="20" height="20"></use>
+                    </svg>
                 </label>
                 <label class="form-item">
                     Email
                     <input type="email" name="email" class="form-input">
-                    <svg class="form-icon" width="18" height="18"><use href="./images/icons.svg#icon-email-black-18dp-1" width="20" height="20"></use></svg>
+                    <svg class="form-icon" width="18" height="18">
+                        <use href="./images/icons.svg#icon-email-black-18dp-1" width="20" height="20"></use>
+                    </svg>
                 </label>
                 <label class="form-item">
                     Komentarz
@@ -393,7 +405,9 @@
                 </label>
                 <label class="form-item form-checkbox">
                     <input type="checkbox" class="checkbox-custom">
-                    <svg class="check-icon" width="16" height="15"><use href="./images/icons.svg#icon-Vector"></use></svg>
+                    <svg class="check-icon" width="16" height="15">
+                        <use href="./images/icons.svg#icon-Vector"></use>
+                    </svg>
                     <span>Oświadczam iż akceptuję <a href="">Regulamin</a> i <a href="">Politykę
                             Prywatności</a>.</span>
                 </label>
