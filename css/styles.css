@@ -214,7 +214,7 @@ img {
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-btn {
+.btn--filter {
   padding: 6px 22px;
   font-weight: 500;
   line-height: 1.62;
@@ -226,8 +226,8 @@ img {
     box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.filter-btn:hover,
-.filter-btn:focus {
+.btn--filter:hover,
+.btn--filter:focus {
   color: var(--bg-color-white);
   background-color: var(--active-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
@@ -243,7 +243,7 @@ img {
   color: var(--active-color);
 }
 
-.product-card-heading {
+.products__heading {
   margin: 20px 24px 4px;
   font-size: 18px;
   font-weight: 700;
@@ -251,7 +251,7 @@ img {
   color: var(--text-color-dark);
 }
 
-.product-card-text {
+.products__text {
   line-height: 1.87;
   margin: 0 24px 20px;
 }
@@ -344,14 +344,14 @@ img {
   margin-top: 20px;
 }
 
-.filter-list {
+.filters {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
 }
 
-.product-list {
+.products {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -359,29 +359,29 @@ img {
   flex-basis: calc((100% - 2 * 30px) / 3);
 }
 
-.product-card {
+.products__card {
   margin: 0;
   flex-basis: calc((100% - 2 * 30px) / 3);
   background: var(--bg-color-white);
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-card figcaption {
+.products__caption {
   border: 1px solid var(--border-card);
 }
 
-.product-card:hover,
-.product-card:focus {
+.products__card:hover,
+.products__card:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.product-box {
+.products__box {
   position: relative;
   overflow: hidden;
 }
 
-.product-overlay {
+.products__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -396,7 +396,7 @@ img {
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.product-card:hover .product-overlay {
+.products__card:hover .products__overlay {
   transform: translatey(0);
 }
 
