@@ -87,7 +87,8 @@ img {
   font-size: 14px;
   letter-spacing: 0.02em;
 }
-.nav__list .nav__link {
+
+.nav__link {
   color: var(--text-color-dark);
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -97,7 +98,7 @@ img {
   gap: 93px;
 }
 
-.nav__list .nav__link--active {
+.nav__link--active {
   color: var(--active-color);
   position: relative;
 }
@@ -118,7 +119,7 @@ img {
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.main .section--dark,
+.section--dark,
 .footer {
   background-color: var(--bg-color-darkgrey);
 }
@@ -191,7 +192,7 @@ img {
   background-color: var(--bg-color-grey);
 }
 
-.team-list__name {
+.team__name {
   color: var(--text-color-dark);
   font-weight: 500;
   margin: 30px 0 10px;
@@ -271,7 +272,7 @@ img {
   padding: 24px 0;
 }
 
-.section--dark .container {
+.section__bg-image {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -305,19 +306,19 @@ img {
   color: var(--text-color-dark);
 }
 
-.services-list,
-.team-list {
+.services,
+.team {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
 
-.services-list li {
+.services__item {
   position: relative;
 }
 
-.services-list__description {
+.services__description {
   position: absolute;
   top: 224px;
   color: var(--services-description);
@@ -330,7 +331,7 @@ img {
   width: 100%;
 }
 
-.team-list__card {
+.team__card {
   margin: auto 0;
   padding: 0 0 30px 0;
   background-color: var(--bg-color-white);
@@ -340,7 +341,7 @@ img {
   text-align: center;
 }
 
-.contact {
+.address__home {
   margin-top: 20px;
 }
 
@@ -436,22 +437,22 @@ img {
   background-color: var(--active-color);
 }
 
-.clients-list {
+.clients {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 30px;
 }
 
-.clients-list__logo {
+.clients__logo {
   border: 1px solid var(--clients-list__logos);
   border-radius: 4px;
   fill: var(--clients-list__logos);
   transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1), border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients-list__logo:hover,
-.clients-list .link:focus .clients-list__logo {
+.clients__logo:hover,
+.clients .link:focus .clients__logo {
   fill: var(--active-color);
   border: 1px solid var(--active-color);
 }
@@ -588,7 +589,7 @@ img {
   gap: 7px;
 }
 
-.form__checkbox a {
+.form__link {
   color: var(--active-color);
 }
 
