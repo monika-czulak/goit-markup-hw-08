@@ -133,12 +133,17 @@ img {
   text-align: center;
 }
 
-.section__bg-image {
+.section__banner {
   background-image: linear-gradient(var(--bg-image-color), var(--bg-image-color)),
     url('../images/img-bg.jpg');
   width: 1600px;
   margin: 0 auto;
   padding: 200px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .btn--order,
@@ -270,14 +275,6 @@ img {
   justify-content: space-between;
   align-items: center;
   padding: 24px 0;
-}
-
-.section__bg-image {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
 }
 
 .section {
