@@ -1,0 +1,84 @@
+@import '../utils/mixin';
+
+.header {
+  background-color: getColor('bg-main-primary');
+  border-bottom: 1px solid getColor('border');
+
+  &__container {
+    width: 1200px;
+    margin: 0 auto;
+    @include flex(space-between);
+    padding: 24px 0;
+  }
+
+  &__link {
+    color: getColor('link-header');
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+      color: getColor('active');
+    }
+  }
+
+  &__menu {
+    display: flex;
+    gap: 93px;
+  }
+
+  &__icons {
+    @include flex(center);
+    text-align: center;
+    fill: currentColor;
+
+    &--spacing {
+      margin-right: 10px;
+    }
+  }
+
+  &__list {
+    @include flex(start);
+    gap: 46px;
+  }
+}
+
+.nav {
+  @include flex(start);
+  gap: 46px;
+
+  &__list {
+    @extend .nav;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: getColor('text-dark');
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+      color: getColor('active');
+    }
+
+    &--active {
+      position: relative;
+      color: getColor('active');
+
+      &::after {
+        content: '';
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 4px;
+        background-color: getColor('active');
+        border-radius: 2px;
+        top: 44px;
+      }
+    }
+  }
+}
