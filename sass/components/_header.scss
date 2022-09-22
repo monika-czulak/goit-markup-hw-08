@@ -40,13 +40,13 @@
   }
 
   &__list {
-    @include flex(start);
+    @include flex(flex-start);
     gap: 46px;
   }
 }
 
 .nav {
-  @include flex(start);
+  @include flex(flex-start);
   gap: 46px;
 
   &__list {

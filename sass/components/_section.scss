@@ -1,0 +1,54 @@
+@import '../utils/mixin';
+
+.section {
+  padding: 94px 0;
+
+  &__no-bottom-padding {
+    padding: 94px 0 0;
+  }
+
+  &--no-padding {
+    padding: 0;
+  }
+
+  &__container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  &__title--primary {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    color: getColor('text-white');
+    text-align: center;
+  }
+
+  &__title--secondary {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 36px;
+    color: getColor('text-dark');
+  }
+
+  &__banner {
+    @include flex(center);
+    flex-direction: column;
+    gap: 30px;
+    background-image: linear-gradient(getColor('bg-image'), getColor('bg-image')),
+      url('../images/img-bg.jpg');
+    width: 1600px;
+    margin: 0 auto;
+    padding: 200px 0;
+  }
+
+  &--light {
+    background-color: getColor('bg-main-primary');
+  }
+
+  &--grey {
+    background-color: getColor('bg-main-secondary');
+  }
+}
