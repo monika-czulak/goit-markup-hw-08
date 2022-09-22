@@ -1,0 +1,27 @@
+@import '../utils/mixin';
+
+.about-us {
+  @include flex(center);
+  gap: 30px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    color: getColor('text-dark');
+    margin-bottom: 10px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+
+  &__icon {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: getColor('bg-main-secondary');
+    @include flex(center);
+    border-radius: 4px;
+  }
+}

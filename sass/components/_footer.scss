@@ -1,0 +1,64 @@
+@import '../utils/mixin';
+
+.footer {
+  background-color: getColor('bg-footer');
+  padding: 60px 0;
+
+  &__container {
+    width: 1200px;
+    margin: 0 auto;
+    @include flex(space-between);
+    gap: 70ox;
+  }
+
+  &__heading {
+    font-weight: 700;
+    font-size: 14px;
+    color: getColor('logo-footer');
+    margin-top: 12px;
+  }
+
+  &__address {
+    color: getColor('text-white');
+    font-style: normal;
+    gap: 9px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  &__form {
+    display: flex;
+  }
+
+  &__input {
+    background-color: transparent;
+    padding: 15px 157px 15px 16px;
+    @include border(getColor('border-primary'));
+    border-radius: 4px;
+    margin-top: 20px;
+    color: getColor('logo-footer');
+    @include transition(border);
+    outline: none;
+
+    &:hover,
+    &:focus {
+      @include border(getColor('active'));
+    }
+  }
+
+  &__icon {
+    margin-left: 24px;
+    fill: getColor('icon-secondary');
+  }
+
+  &__link {
+    color: getColor('link-footer');
+    @include transition(color);
+
+    &:hover,
+    &:focus {
+      color: getColor('active');
+    }
+  }
+}

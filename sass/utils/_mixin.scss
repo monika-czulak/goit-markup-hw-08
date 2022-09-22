@@ -7,3 +7,7 @@
     justify-content: $justify;
     align-items: center;
 }
+
+@mixin border($color) {
+    border: 1px solid $color;
+}

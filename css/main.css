@@ -3,8 +3,7 @@ body {
   font-size: 16px;
   line-height: 1.17;
   letter-spacing: 0.03em;
-  color: var(--text-color-light);
-  background-color: var(--bg-color-lightgrey);
+  color: #757575;
 }
 
 ul,
@@ -20,6 +19,10 @@ p {
 
 img {
   display: block;
+}
+
+a {
+  text-decoration: none;
 }
 
 .header {
@@ -146,6 +149,7 @@ img {
 }
 .section--no-padding {
   padding: 0;
+  background-color: #2f303a;
 }
 .section__container {
   width: 1200px;
@@ -192,4 +196,251 @@ img {
 }
 .section--grey {
   background-color: #f5f4fa;
+}
+
+.about-us {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.about-us__title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #212121;
+  margin-bottom: 10px;
+}
+.about-us__description {
+  font-size: 14px;
+  line-height: 1.71;
+}
+.about-us__icon {
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: #f5f4fa;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 4px;
+}
+
+.services, .team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.services__item {
+  position: relative;
+}
+.services__description {
+  position: absolute;
+  top: 224px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 14px;
+  background-color: rgba(47, 48, 58, 0.8);
+  padding: 27px;
+  text-align: center;
+  width: 100%;
+}
+
+.team__card {
+  margin: auto 0;
+  padding: 0 0 30px 0;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  text-align: center;
+}
+.team__name {
+  color: getColor "text-dark";
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+.socials__icon--light {
+  fill: #afb1b8;
+  background-color: #ffffff;
+  border-radius: 50%;
+  -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials__icon--light:hover {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+.socials__icon--dark {
+  fill: #ffffff;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1019607843);
+  -webkit-transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.socials__icon--dark:hover {
+  background-color: #2196f3;
+}
+.socials__link:focus .socials__icon--light {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+.socials__link:focus .socials__icon--dark {
+  background-color: #2196f3;
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+.clients__logo {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  fill: #afb1b8;
+  -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__logo:hover {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
+.clients__link:focus .clients__logo {
+  fill: #2196f3;
+  border: 1px solid #2196f3;
+}
+
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+.footer__container {
+  width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 70ox;
+}
+.footer__heading {
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+  margin-top: 12px;
+}
+.footer__address {
+  color: #ffffff;
+  font-style: normal;
+  gap: 9px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+.footer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.footer__input {
+  background-color: transparent;
+  padding: 15px 157px 15px 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3019607843);
+  border-radius: 4px;
+  margin-top: 20px;
+  color: #ffffff;
+  -webkit-transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  outline: none;
+}
+.footer__input:hover, .footer__input:focus {
+  border: 1px solid #2196f3;
+}
+.footer__icon {
+  margin-left: 24px;
+  fill: #ffffff;
+}
+.footer__link {
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer__link:hover, .footer__link:focus {
+  color: #2196f3;
+}
+
+.btn {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  border-style: none;
+}
+.btn--order, .btn--signin, .btn--send {
+  padding: 10px 42px;
+  font-weight: 700;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color: var(--bg-color-white);
+  background-color: var(--active-color);
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 }/*# sourceMappingURL=main.css.map */

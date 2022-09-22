@@ -1,0 +1,42 @@
+@import '../utils/mixin';
+
+.socials {
+  @include flex(center);
+  gap: 10px;
+  margin-top: 20px;
+
+  &__icon--light {
+    fill: getColor('icon-primary');
+    background-color: getColor('bg-main-primary');
+    border-radius: 50%;
+    @include transition(fill);
+    @include transition(background-color);
+
+    &:hover {
+      fill: getColor('icon-secondary');
+      background-color: getColor('active');
+    }
+  }
+
+  &__icon--dark {
+    fill: getColor('icon-secondary');
+    border-radius: 50%;
+    background-color: getColor('bg-icon-footer');
+    @include transition(background-color);
+
+    &:hover {
+      background-color: getColor('active');
+    }
+  }
+
+  &__link:focus {
+    .socials__icon--light {
+      fill: getColor('icon-secondary');
+      background-color: getColor('active');
+    }
+
+    .socials__icon--dark {
+      background-color: getColor('active');
+    }
+  }
+}

@@ -1,0 +1,26 @@
+@import '../utils/mixin';
+
+.clients {
+  @include flex(space-between);
+  gap: 30px;
+
+  &__logo {
+    @include border(getColor('logo-client'));
+    border-radius: 4px;
+    fill: getColor('logo-client');
+    @include transition(fill);
+    @include transition(border);
+
+    &:hover {
+      fill: getColor('active');
+      @include border(getColor('active'));
+    }
+  }
+
+  &__link:focus {
+    .clients__logo {
+      fill: getColor('active');
+      @include border(getColor('active'));
+    }
+  }
+}

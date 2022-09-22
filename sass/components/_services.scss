@@ -1,0 +1,23 @@
+@import '../utils/mixin';
+
+.services {
+  @include flex(space-between);
+  gap: 30px;
+
+  &__item {
+    position: relative;
+  }
+
+  &__description {
+    position: absolute;
+    top: 224px;
+    color: getColor('text-white');
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    background-color: getColor('bg-services');
+    padding: 27px;
+    text-align: center;
+    width: 100%;
+  }
+}
