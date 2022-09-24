@@ -1,5 +1,3 @@
-@import '../utils/mixin';
-
 .about-us {
   @include flex(center);
   gap: 30px;

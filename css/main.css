@@ -435,12 +435,228 @@ a {
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color: var(--bg-color-white);
-  background-color: var(--active-color);
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1490196078);
+          box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1490196078);
   -webkit-transition: -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn--order:hover, .btn--order:focus, .btn--signin:hover, .btn--signin:focus, .btn--send:hover, .btn--send:focus {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.btn--filter {
+  padding: 6px 22px;
+  font-weight: 500;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: #212121;
+  background-color: #f5f4fa;
+  -webkit-transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn--filter:hover, .btn--filter:focus {
+  color: #ffffff;
+  background-color: #2196f3;
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.btn--send {
+  padding: 10px 76px;
+}
+.btn--signin {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 0 0 12px;
+  padding-right: 28px;
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: #ffffff;
+  font-size: 12px;
+  border-radius: 4px;
+}
+.modal__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1019607843);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.modal__btn:hover .modal__icon, .modal__btn:focus .modal__icon {
+  opacity: 0.5;
+}
+.modal__icon {
+  fill: #000000;
+  -webkit-transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.form, .form__item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 448px;
+  margin: auto;
+  gap: 10px;
+}
+.form__item {
+  gap: 0;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+.form__item:hover .form__icon, .form__item:focus-within .form__icon {
+  fill: #2196f3;
+}
+.form__header {
+  font-size: 20px;
+  color: #212121;
+  text-align: center;
+  margin: 40px 0 12px;
+}
+.form__input {
+  margin-top: 4px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 40px;
+  outline: none;
+  -webkit-transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__input:hover, .form__input:focus {
+  border: 1px solid #2196f3;
+}
+.form__comment {
+  resize: none;
+  height: 120px;
+  padding: 12px 16px;
+}
+.form__comment::-webkit-input-placeholder {
+  color: rgba(117, 117, 117, 0.5019607843);
+}
+.form__comment::-moz-placeholder {
+  color: rgba(117, 117, 117, 0.5019607843);
+}
+.form__comment:-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5019607843);
+}
+.form__comment::-ms-input-placeholder {
+  color: rgba(117, 117, 117, 0.5019607843);
+}
+.form__comment::placeholder {
+  color: rgba(117, 117, 117, 0.5019607843);
+}
+.form__icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  fill: #212121;
+  -webkit-transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form__checkbox {
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  gap: 7px;
+}
+.form__checkbox--custom {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 2px;
+  cursor: pointer;
+  width: 16px;
+  height: 15px;
+}
+.form__checkbox--custom:checked {
+  display: none;
+}
+.form__checkbox--custom:checked + .checkbox-icon {
+  display: block;
+  background-color: #2196f3;
+  fill: #ffffff;
+  border-radius: 2px;
+}
+.form__link {
+  color: getColor "active";
+  -webkit-transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  text-decoration: underline;
+}
+.form__link:hover, .form__link:focus {
+  opacity: 0.5;
+}
+
+.checkbox-icon {
+  display: none;
 }/*# sourceMappingURL=main.css.map */

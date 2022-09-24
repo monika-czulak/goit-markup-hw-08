@@ -1,5 +1,3 @@
-@import '../utils/mixin';
-
 .clients {
   @include flex(space-between);
   gap: 30px;

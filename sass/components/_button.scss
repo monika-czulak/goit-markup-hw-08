@@ -1,5 +1,3 @@
-@import '../utils/mixin';
-
 .btn {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -14,9 +12,45 @@
     font-weight: 700;
     line-height: 1.87;
     letter-spacing: 0.06em;
-    color: var(--bg-color-white);
-    background-color: var(--active-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    color: getColor('text-white');
+    background-color: getColor('active');
+    box-shadow: 0px 4px 4px 0px #00000026;
+    @include transition(transform);
+
+    &:hover,
+    &:focus {
+      transform: scale(1.05);
+    }
+  }
+
+  &--filter {
+    padding: 6px 22px;
+    font-weight: 500;
+    line-height: 1.62;
+    letter-spacing: 0.03em;
+    color: getColor('text-dark');
+    background-color: getColor('bg-main-secondary');
+    @include transition(color);
+    @include transition(background-color);
+    @include transition(box-shadow);
+
+    &:hover,
+    &:focus {
+      color: getColor('text-white');
+      background-color: getColor('active');
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  &--send {
+    padding: 10px 76px;
+    
+  }
+
+  &--signin {
+    @include flex(center);
+    margin: 20px 0 0 12px;
+    padding-right: 28px;
   }
 }

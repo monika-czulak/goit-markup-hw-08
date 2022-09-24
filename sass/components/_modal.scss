@@ -1,0 +1,51 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  min-height: 581px;
+  background-color: getColor('bg-main-primary');
+  font-size: 12px;
+  border-radius: 4px;
+
+  &__btn {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background-color: getColor('bg-main-primary');
+    border: 1px solid getColor('btn-modal');
+    border-radius: 50%;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      .modal__icon {
+        opacity: 0.5;
+      }
+    }
+  }
+
+  &__icon {
+    fill: getColor('logo-header');
+    @include transition(opacity);
+  }
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: getColor('bg-modal');
+  @include transition(all);
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

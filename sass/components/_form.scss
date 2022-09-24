@@ -1,0 +1,103 @@
+.form {
+  position: relative;
+  @include flex(center);
+  flex-direction: column;
+  width: 448px;
+  margin: auto;
+  gap: 10px;
+
+  &__item {
+    @extend .form;
+    gap: 0;
+    align-items: stretch;
+
+    &:hover .form__icon,
+    &:focus-within .form__icon {
+      fill: getColor('active');
+    }
+  }
+
+  &__header {
+    font-size: 20px;
+    color: getColor('text-dark');
+    text-align: center;
+    margin: 40px 0 12px;
+  }
+
+  &__input {
+    margin-top: 4px;
+    height: 40px;
+    border: 1px solid getColor('border-secondary');
+    border-radius: 4px;
+    padding-left: 40px;
+    outline: none;
+    @include transition(border);
+
+    &:hover,
+    &:focus {
+      border: 1px solid getColor('active');
+    }
+  }
+
+  &__comment {
+    resize: none;
+    height: 120px;
+    padding: 12px 16px;
+
+    &::placeholder {
+      color: getColor('placeholder');
+    }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    fill: getColor('text-dark');
+    @include transition(border);
+    @include transition(fill);
+  }
+
+  &__checkbox {
+    font-size: 14px;
+    @include flex(center);
+    margin-top: 10px;
+    margin-bottom: 20px;
+    gap: 7px;
+
+    &--custom {
+      appearance: none;
+      border: 1px solid getColor('border-secondary');
+      border-radius: 2px;
+      cursor: pointer;
+      width: 16px;
+      height: 15px;
+
+      &:checked {
+        display: none;
+      }
+
+      &:checked + .checkbox-icon {
+        display: block;
+        background-color: getColor('active');
+        fill: getColor('text-white');
+        border-radius: 2px;
+      }
+    }
+  }
+
+  &__link {
+    color: getColor ('active');
+    @include transition(opacity);
+    text-decoration: underline;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+}
+
+.checkbox-icon {
+  display: none;
+}

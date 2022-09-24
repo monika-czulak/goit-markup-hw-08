@@ -148,7 +148,7 @@ img {
   gap: 30px;
 } */
 
-.btn--order,
+/* .btn--order,
 .btn--signin,
 .btn--send {
   padding: 10px 42px;
@@ -168,7 +168,7 @@ img {
 .btn--send:hover,
 .btn--send:focus {
   transform: scale(1.05);
-}
+} */
 
 /* .btn {
   font-family: 'Roboto', sans-serif;
@@ -222,7 +222,7 @@ img {
   transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
 } */
 
-.btn--filter {
+/* .btn--filter {
   padding: 6px 22px;
   font-weight: 500;
   line-height: 1.62;
@@ -240,7 +240,7 @@ img {
   background-color: var(--active-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-}
+} */
 
 /* .nav__link:hover,
 .nav__link:focus, */
@@ -492,7 +492,7 @@ img {
 
 /* --- okno modalne --- */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   left: 0;
   top: 0;
@@ -500,9 +500,9 @@ img {
   height: 100%;
   background-color: var(--background-backdrop);
   transition: all 0.25s linear;
-}
+} */
 
-.modal {
+/* .modal {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -512,9 +512,9 @@ img {
   background-color: #fff;
   font-size: 12px;
   border-radius: 4px;
-}
+} */
 
-.btn-close {
+/* .modal__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -526,18 +526,18 @@ img {
   cursor: pointer;
 }
 
-.btn-close__icon {
+.modal__icon {
   fill: var(--logo-color-header);
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.is-hidden {
+/* .is-hidden {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
+} */
 
-.form,
+/* .form,
 .form__item {
   display: flex;
   position: relative;
@@ -551,9 +551,9 @@ img {
   color: var(--text-color-dark);
   text-align: center;
   margin: 40px 0 12px;
-}
+} */
 
-.form__input {
+/* .form__input {
   margin-top: 4px;
   height: 40px;
   border: 1px solid var(--form-brd);
@@ -561,24 +561,24 @@ img {
   padding-left: 40px;
   outline: none;
   transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.form {
+/* .form {
   gap: 10px;
   align-items: center;
-}
+} */
 
-.form__comment {
+/* .form__comment {
   resize: none;
   height: 120px;
   padding: 12px 16px;
-}
+} */
 
-.form__comment::placeholder {
+/* .form__comment::placeholder {
   color: var(--form-placehldr);
-}
+} */
 
-.form__checkbox {
+/* .form__checkbox {
   font-size: 14px;
   text-align: center;
   margin-top: 10px;
@@ -587,13 +587,13 @@ img {
   flex-direction: row;
   justify-content: center;
   gap: 7px;
-}
+} */
 
-.form__link {
+/* .form__link {
   color: var(--active-color);
-}
+} */
 
-.form__checkbox--custom {
+/* .form__checkbox--custom {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -602,58 +602,58 @@ img {
   cursor: pointer;
   width: 16px;
   height: 15px;
-}
+} */
 
-.form__checkbox--custom:checked + .checkbox-icon {
+/* .form__checkbox--custom:checked + .checkbox-icon {
   display: block;
   background-color: var(--active-color);
   fill: var(--bg-color-white);
   border-radius: 2px;
-}
+} */
 
-.form__checkbox--custom:checked {
+/* .form__checkbox--custom:checked {
   display: none;
-}
+} */
 
-.checkbox-icon {
+/* .checkbox-icon {
   display: none;
-}
+} */
 
-.btn--send {
+/* .btn--send {
   padding: 10px 76px;
-}
+} */
 
-.form__icon {
+/* .form__icon {
   fill: var(--text-color-dark);
   position: absolute;
   top: 50%;
   left: 10px;
   transition: border 0.25s cubic-bezier(0.4, 0, 0.2, 1), fill 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.form__input:hover,
+/* .form__input:hover,
 .form__input:focus {
   border: 1px solid var(--active-color);
-}
+} */
 
-.form__item:hover .form__icon,
+/* .form__item:hover .form__icon,
 .form__item:focus-within .form__icon {
   fill: var(--active-color);
-}
+} */
 
-.form__link:hover,
+/* .form__link:hover,
 .form__link:focus {
   opacity: 0.5;
 }
 
 .form__link {
   transition: opacity 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.btn-close:hover .btn-close__icon,
-.btn-close:focus .btn-close__icon {
+/* .modal__btn:hover .modal__icon,
+.modal__btn:focus .modal__icon {
   opacity: 0.5;
-}
+} */
 
 /* --- koniec okna modalnego --- */
 
@@ -674,14 +674,14 @@ img {
   outline: none;
 } */
 
-.btn--signin {
+/* .btn--signin {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 20px;
   margin-left: 12px;
   padding-right: 28px;
-}
+} */
 
 /* .footer__icon {
   margin-left: 24px;
