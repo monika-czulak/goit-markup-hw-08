@@ -190,10 +190,10 @@ img {
 } */
 
 /* .about-us__description, */
-.address {
+/* .footer__address {
   font-size: 14px;
   line-height: 1.71;
-}
+} */
 
 /* .section--grey {
   background-color: var(--bg-color-grey);
@@ -243,26 +243,26 @@ img {
 } */
 
 /* .nav__link:hover,
-.nav__link:focus, */
-.address__link:hover,
-.address__link:focus
-/* .header__link:hover,
-.header__link:focus */ {
+.nav__link:focus,
+.footer__link:hover,
+.footer__link:focus
+.header__link:hover,
+.header__link:focus {
   color: var(--active-color);
-}
+} */
 
-.products__heading {
+/* .products__heading {
   margin: 20px 24px 4px;
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
   color: var(--text-color-dark);
-}
+} */
 
-.products__text {
+/* .products__text {
   line-height: 1.87;
   margin: 0 24px 20px;
-}
+} */
 
 /* .nav,
 .nav__list */
@@ -341,33 +341,33 @@ img {
   text-align: center;
 } */
 
-.address__home {
+/* .footer__home {
   margin-top: 20px;
-}
+} */
 
-.filters {
+/* .products__filter {
   display: flex;
   justify-content: center;
   gap: 8px;
   margin-bottom: 50px;
 }
 
-.products {
+.products__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
   flex-basis: calc((100% - 2 * 30px) / 3);
-}
+} */
 
-.products__card {
+/* .products__card {
   margin: 0;
   flex-basis: calc((100% - 2 * 30px) / 3);
   background: var(--bg-color-white);
   transition: box-shadow 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.products__caption {
+/* .products__caption {
   border: 1px solid var(--border-card);
 }
 
@@ -375,14 +375,14 @@ img {
 .products__card:focus {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+} */
 
-.products__box {
+/* .products__box {
   position: relative;
   overflow: hidden;
-}
+} */
 
-.products__overlay {
+/* .products__overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -395,11 +395,11 @@ img {
   padding: 49px 45px 49px 24px;
   transform: translatey(100%);
   transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
-.products__card:hover .products__overlay {
+/* .products__card:hover .products__overlay {
   transform: translatey(0);
-}
+} */
 
 /* .header__icons--spacing {
   margin-right: 10px;
