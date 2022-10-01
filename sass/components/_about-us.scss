@@ -1,25 +1,47 @@
 .about-us {
+  margin: 0 15px 60px;
   @include flex(center);
+  flex-direction: column;
   gap: 30px;
+
+  &__icon {
+    padding: 25px 0;
+    margin-bottom: 30px;
+    background-color: getColor('bg-main-secondary');
+    @include flex(center);
+    border-radius: 4px;
+  }
 
   &__title {
     font-weight: 700;
     font-size: 14px;
     color: getColor('text-dark');
     margin-bottom: 10px;
+    text-align: center;
   }
 
   &__description {
     font-size: 14px;
     line-height: 1.71;
   }
+}
 
-  &__icon {
-    width: 270px;
-    height: 120px;
-    margin-bottom: 30px;
-    background-color: getColor('bg-main-secondary');
-    @include flex(center);
-    border-radius: 4px;
+@media (min-width: 768px) {
+  .about-us {
+    flex-direction: row;
+    flex-wrap: wrap;
+    // dlaczego flex-basis nie dziala??!!
+    flex-basis: calc((100% - 30px) / 2);
+
+    &__title {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .about-us {
+    flex-wrap: nowrap;
+    margin: 0 0 60px;
   }
 }

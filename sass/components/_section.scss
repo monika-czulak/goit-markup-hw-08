@@ -1,8 +1,16 @@
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+
+  @media (min-width: 1200px) {
+    padding: 94px 0;
+  }
 
   &__no-bottom-padding {
-    padding: 94px 0 0;
+    padding: 60px 0 0;
+
+    @media (min-width: 1200px) {
+      padding: 94px 0 0;
+    }
   }
 
   &--no-padding {
@@ -19,7 +27,7 @@
     }
 
     @media (min-width: 768px) {
-      width: 768px;
+      min-width: 768px;
     }
 
     @media (min-width: 1200px) {

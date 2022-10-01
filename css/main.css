@@ -142,10 +142,20 @@ a {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+}
+@media (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 .section__no-bottom-padding {
-  padding: 94px 0 0;
+  padding: 60px 0 0;
+}
+@media (min-width: 1200px) {
+  .section__no-bottom-padding {
+    padding: 94px 0 0;
+  }
 }
 .section--no-padding {
   padding: 0;
@@ -162,7 +172,7 @@ a {
 }
 @media (min-width: 768px) {
   .section__container {
-    width: 768px;
+    min-width: 768px;
   }
 }
 @media (min-width: 1200px) {
@@ -228,6 +238,7 @@ a {
 }
 
 .about-us {
+  margin: 0 15px 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,21 +248,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 30px;
 }
-.about-us__title {
-  font-weight: 700;
-  font-size: 14px;
-  color: #212121;
-  margin-bottom: 10px;
-}
-.about-us__description {
-  font-size: 14px;
-  line-height: 1.71;
-}
 .about-us__icon {
-  width: 270px;
-  height: 120px;
+  padding: 25px 0;
   margin-bottom: 30px;
   background-color: #f5f4fa;
   display: -webkit-box;
@@ -265,7 +269,40 @@ a {
           align-items: center;
   border-radius: 4px;
 }
+.about-us__title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #212121;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.about-us__description {
+  font-size: 14px;
+  line-height: 1.71;
+}
 
+@media (min-width: 768px) {
+  .about-us {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
+  .about-us__title {
+    text-align: left;
+  }
+}
+@media (min-width: 1200px) {
+  .about-us {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0 0 60px;
+  }
+}
 .services, .team {
   display: -webkit-box;
   display: -ms-flexbox;
