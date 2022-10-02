@@ -31,3 +31,9 @@ $colors: (
 @function getColor($key) {
   @return map-get($colors, $key);
 }
+
+// screen breakpoints
+$screenMobile: 480px;
+$screenTablet: 768px;
+$screenDesktop: 1200px;
+$ScreenMinWidth: 320px;
