@@ -230,8 +230,18 @@ a {
     padding: 200px 0;
   }
 }
-.section--light {
-  background-color: #ffffff;
+@media (min-width: 1200px) {
+  .section--light {
+    background-color: #ffffff;
+  }
+}
+.section--light:nth-of-type(3) {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .section--light:nth-of-type(3) {
+    display: block;
+  }
 }
 .section--grey {
   background-color: #f5f4fa;
@@ -300,7 +310,7 @@ a {
   .about-us {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin: 0 0 60px;
+    margin: 0;
   }
 }
 .services, .team {

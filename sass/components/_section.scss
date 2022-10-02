@@ -76,7 +76,17 @@
   }
 
   &--light {
-    background-color: getColor('bg-main-primary');
+    @media (min-width: 1200px) {
+      background-color: getColor('bg-main-primary');
+    }
+
+    &:nth-of-type(3) {
+      display: none;
+
+      @media (min-width: 1200px) {
+        display: block;
+      }
+    }
   }
 
   &--grey {
