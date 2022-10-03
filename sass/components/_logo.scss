@@ -14,7 +14,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: $screenDesktop) {
   .logo {
     font-size: 26px;
   }

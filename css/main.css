@@ -531,8 +531,8 @@ a {
 }
 .footer__container {
   min-width: 320px;
-  width: 100%;
   margin: 0 auto;
+  width: 100%;
 }
 .footer__contacts {
   display: -webkit-box;
@@ -649,6 +649,72 @@ a {
   color: #2196f3;
 }
 
+@media (min-width: 768px) {
+  .footer__container {
+    width: 768px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 60px;
+  }
+  .footer__newsletter {
+    margin-top: 0;
+  }
+  .footer__socials {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1200px) {
+  .footer {
+    padding: 60px 0;
+  }
+  .footer__container {
+    width: 1200px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .footer__input {
+    padding: 15px 157px 15px 16px;
+  }
+  .footer__form {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .footer__socials, .footer__contacts, .footer__newsletter {
+    display: block;
+  }
+  .footer__address {
+    gap: 9px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+}
 .btn {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
@@ -714,7 +780,7 @@ a {
 }
 @media (min-width: 1200px) {
   .btn--signin {
-    margin-right: 12px;
+    margin-left: 12px;
   }
 }
 

@@ -52,8 +52,8 @@
     margin-top: 20px;
     padding-right: 28px;
 
-    @media (min-width: 1200px) {
-      margin-right: 12px;
+    @media (min-width: $screenDesktop) {
+      margin-left: 12px;
     }
   }
 }
