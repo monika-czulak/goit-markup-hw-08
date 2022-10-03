@@ -45,12 +45,15 @@
 
   &--send {
     padding: 10px 76px;
-    
   }
 
   &--signin {
     @include flex(center);
-    margin: 20px 0 0 12px;
+    margin-top: 20px;
     padding-right: 28px;
+
+    @media (min-width: 1200px) {
+      margin-right: 12px;
+    }
   }
 }

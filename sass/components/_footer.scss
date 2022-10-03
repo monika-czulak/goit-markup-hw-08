@@ -1,36 +1,59 @@
 .footer {
   background-color: getColor('bg-footer');
-  padding: 60px 0;
+  min-width: $ScreenMinWidth;
+  padding: 60px 15px;
+  @include flex(center);
+  flex-direction: column;
 
   &__container {
-    width: 1200px;
+    min-width: $ScreenMinWidth;
+    width: 100%;
     margin: 0 auto;
-    @include flex(space-between);
+  }
+
+  &__contacts {
+    @include flex(center);
+    flex-direction: column;
+  }
+
+  &__socials {
+    @include flex(center);
+    flex-direction: column;
+    margin-top: 60px;
   }
 
   &__heading {
     font-weight: 700;
     font-size: 14px;
     color: getColor('logo-footer');
-    margin-top: 12px;
   }
 
   &__address {
     color: getColor('text-white');
     font-style: normal;
-    gap: 9px;
-    display: flex;
+    font-size: 14px;
+    line-height: 1.7;
+    gap: 8px;
+    @include flex(center);
     flex-direction: column;
     margin-top: 20px;
   }
 
+  &__newsletter {
+    @include flex(center);
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
   &__form {
-    display: flex;
+    @include flex(center);
+    flex-direction: column;
+    
   }
 
   &__input {
     background-color: transparent;
-    padding: 15px 157px 15px 16px;
+    padding: 15px 250px 15px 16px;
     @include border(getColor('border-primary'));
     border-radius: 4px;
     margin-top: 20px;
@@ -59,3 +82,61 @@
     }
   }
 }
+
+//   &__container {
+//     width: 1200px;
+//     margin: 0 auto;
+//     @include flex(space-between);
+//   }
+
+//   &__heading {
+//     font-weight: 700;
+//     font-size: 14px;
+//     color: getColor('logo-footer');
+//     margin-top: 12px;
+//   }
+
+//   &__address {
+//     color: getColor('text-white');
+//     font-style: normal;
+//     gap: 9px;
+//     display: flex;
+//     flex-direction: column;
+//     margin-top: 20px;
+//   }
+
+//   &__form {
+//     display: flex;
+//   }
+
+//   &__input {
+//     background-color: transparent;
+//     padding: 15px 157px 15px 16px;
+//     @include border(getColor('border-primary'));
+//     border-radius: 4px;
+//     margin-top: 20px;
+//     color: getColor('logo-footer');
+//     @include transition(border);
+//     outline: none;
+
+//     &:hover,
+//     &:focus {
+//       @include border(getColor('active'));
+//     }
+//   }
+
+//   &__icon {
+//     margin-left: 24px;
+//     fill: getColor('icon-secondary');
+//   }
+
+//   &__link {
+//     color: getColor('link-footer');
+//     @include transition(color);
+
+//     &:hover,
+//     &:focus {
+//       color: getColor('active');
+//     }
+//   }
+// }

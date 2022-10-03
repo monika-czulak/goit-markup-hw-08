@@ -30,7 +30,7 @@
   .about-us {
     flex-direction: row;
     flex-wrap: wrap;
-    // dlaczego flex-basis nie dziala??!!
+    
     > li {
       flex-basis: calc((100% - 30px) / 2);
     }
