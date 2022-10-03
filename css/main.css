@@ -387,7 +387,7 @@ a {
         flex-wrap: wrap;
     margin: 0 15px;
   }
-  .team li {
+  .team > li {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
   }
