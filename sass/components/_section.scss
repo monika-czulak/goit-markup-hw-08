@@ -1,6 +1,6 @@
 .section {
   min-width: $ScreenMinWidth;
-  padding: 60px 0;
+  padding: 60px 15px;
   margin: 0 auto;
 
   @media (min-width: 1200px) {
@@ -8,7 +8,7 @@
   }
 
   &__no-bottom-padding {
-    padding: 60px 0 0;
+    padding: 60px 15px 0;
 
     @media (min-width: 1200px) {
       padding: 94px 0 0;
@@ -55,8 +55,14 @@
     text-align: center;
     margin-bottom: 50px;
     font-weight: 700;
-    font-size: 36px;
+    font-size: 28px;
+    line-height: 1.14;
     color: getColor('text-dark');
+
+    @media (min-width: 1200px) {
+      font-size: 36px;
+      line-height: 1.17;
+    }
   }
 
   &__banner {

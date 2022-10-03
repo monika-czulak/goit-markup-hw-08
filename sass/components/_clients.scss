@@ -1,6 +1,7 @@
 .clients {
-  @include flex(space-between);
+  @include flex(center);
   gap: 30px;
+  flex-wrap: wrap;
 
   &__logo {
     @include border(getColor('logo-client'));
@@ -8,17 +9,30 @@
     fill: getColor('logo-client');
     @include transition(fill);
     @include transition(border);
+    width: 210px;
+    height: 92px;
 
     &:hover {
       fill: getColor('active');
       @include border(getColor('active'));
     }
-  }
 
-  &__link:focus {
-    .clients__logo {
-      fill: getColor('active');
-      @include border(getColor('active'));
+    &__link:focus {
+      .clients__logo {
+        fill: getColor('active');
+        @include border(getColor('active'));
+      }
+    }
+  } 
+}
+
+@media (min-width: 1200px) {
+  .clients {
+    flex-wrap: nowrap;
+
+    &__logo {
+      width: 170px;
+      height: 92px;
     }
   }
 }
