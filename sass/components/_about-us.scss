@@ -4,6 +4,10 @@
   flex-direction: column;
   gap: 30px;
 
+  > li {
+    flex-basis: calc(100% - 30px);
+  }
+
   &__icon {
     padding: 25px 0;
     margin-bottom: 30px;
@@ -30,7 +34,7 @@
   .about-us {
     flex-direction: row;
     flex-wrap: wrap;
-    
+
     > li {
       flex-basis: calc((100% - 30px) / 2);
     }

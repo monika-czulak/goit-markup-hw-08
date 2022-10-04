@@ -20,21 +20,30 @@
     background-color: getColor('bg-banner');
   }
 
-  &__container {
-    min-width: $ScreenMinWidth;
-    margin: 0 auto;
-
-    @media (min-width: $screenMobile) {
-      max-width: $screenMobile;
-    }
-
-    @media (min-width: $screenTablet) {
-      max-width: $screenTablet;
-    }
+  &--only-desktop {
+    display: none;
 
     @media (min-width: $screenDesktop) {
-      max-width: $screenDesktop;
+      display: block;
     }
+  }
+
+  &__container {
+    // min-width: $ScreenMinWidth;
+    max-width: $screenDesktop;
+    margin: 0 auto;
+
+    // @media (min-width: $screenMobile) {
+    //   max-width: $screenMobile;
+    // }
+
+    // @media (min-width: $screenTablet) {
+    //   max-width: $screenTablet;
+    // }
+
+    // @media (min-width: $screenDesktop) {
+    //   max-width: $screenDesktop;
+    // }
   }
 
   &__title--primary {
@@ -84,17 +93,7 @@
   }
 
   &--light {
-    @media (min-width: $screenDesktop) {
-      background-color: getColor('bg-main-primary');
-    }
-
-    &:nth-of-type(3) {
-      display: none;
-
-      @media (min-width: $screenDesktop) {
-        display: block;
-      }
-    }
+    background-color: getColor('bg-main-primary');
   }
 
   &--grey {
