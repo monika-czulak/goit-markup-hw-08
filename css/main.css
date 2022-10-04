@@ -537,6 +537,12 @@ a {
   border: 1px solid #2196f3;
 }
 
+@media (min-width: 768px) {
+  .clients > .clients__logo {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
+}
 @media (min-width: 1200px) {
   .clients {
     -ms-flex-wrap: nowrap;

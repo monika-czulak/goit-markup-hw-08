@@ -23,7 +23,14 @@
         @include border(getColor('active'));
       }
     }
-  } 
+  }
+}
+
+// do poprawy flex-basis - nie dziala miedzy 960 a 1200 px
+@media (min-width: $screenTablet) {
+  .clients > .clients__logo {
+    flex-basis: calc((100% - 2 * 30px) / 3);
+  }
 }
 
 @media (min-width: $screenDesktop) {
