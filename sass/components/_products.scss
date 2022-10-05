@@ -1,20 +1,41 @@
 .products {
+  @media (min-width: $screenTablet) {
+    max-width: $screenTablet;
+  }
+
+  @media (min-width: $screenDesktop) {
+    max-width: $screenDesktop;
+  }
+
   &__filter {
     @include flex(center);
     gap: 8px;
     margin-bottom: 50px;
+    flex-wrap: wrap;
   }
 
   &__list {
     @include flex(center);
     flex-wrap: wrap;
     gap: 30px;
-    flex-basis: calc((100% - 2 * 30px) / 3);
+
+    @media (min-width: $screenTablet) {
+      justify-content: flex-start;
+    }
+
+    > li {
+      @media (min-width: $screenTablet) {
+        flex-basis: calc((100% - 30px) / 2);
+      }
+
+      @media (min-width: $screenDesktop) {
+        flex-basis: calc((100% - 2 * 30px) / 3);
+      }
+    }
   }
 
   &__card {
     margin: 0;
-    flex-basis: calc((100% - 2 * 30px) / 3);
     background: getColor('bg-main-primary');
     @include transition(box-shadow);
 
