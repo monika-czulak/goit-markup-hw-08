@@ -1,25 +1,24 @@
 .footer {
   background-color: getColor('bg-footer');
-  min-width: $ScreenMinWidth;
-  padding: 60px 15px;
-  @include flex(center);
-  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
 
   &__container {
-    // min-width: $ScreenMinWidth;
-    width: $ScreenMinWidth;
-    margin: 0 auto;
+    @include flex(center);
+    flex-direction: column;
+    gap: 60px;
+    padding: 60px 15px;
   }
 
-  &__contacts {
+  &__contacts,
+  &__socials,
+  &__newsletter {
     @include flex(center);
     flex-direction: column;
   }
 
-  &__socials {
-    @include flex(center);
-    flex-direction: column;
-    margin-top: 60px;
+  &__newsletter {
+    width: 100%;
   }
 
   &__heading {
@@ -39,26 +38,22 @@
     margin-top: 20px;
   }
 
-  &__newsletter {
-    @include flex(center);
-    flex-direction: column;
-    margin-top: 60px;
-  }
-
   &__form {
     @include flex(center);
     flex-direction: column;
+    width: 100%;
   }
 
   &__input {
+    width: 100%;
+    max-width: 450px;
     background-color: transparent;
-    padding: 15px 250px 15px 16px;
+    padding: 15px;
     @include border(getColor('border-primary'));
     border-radius: 4px;
     margin-top: 20px;
     color: getColor('logo-footer');
     @include transition(border);
-    outline: none;
 
     &:hover,
     &:focus {
@@ -88,6 +83,7 @@
       width: $screenTablet;
       margin: 0 auto;
       @include flex(center);
+      justify-content: space-around;
       flex-direction: row;
       flex-wrap: wrap;
       gap: 60px;
@@ -104,31 +100,82 @@
 }
 
 @media (min-width: $screenDesktop) {
+  //   .footer {
+  //     padding: 60px 0;
+
+  //     &__container {
+  //       width: $screenDesktop;
+  //       @include flex(space-between);
+  //       align-items: baseline;
+  //       flex-wrap: nowrap;
+  //       padding: 0;
+  //       gap: 70px;
+  //     }
+
+  //     // &__input {
+  //     //   padding: 15px 157px 15px 16px;
+  //     // }
+
+  //     &__newsletter {
+  //       @include flex(flex-start);
+  //       align-items: flex-start;
+  //       flex-wrap: nowrap;
+  //     }
+
+  //     &__input {
+  //       padding: 15px 157px 15px 16px;
+  //     }
+
+  //     &__address {
+  //       gap: 9px;
+  //       align-items: flex-start;
+  //     }
+  //   }
+  // }
   .footer {
-    padding: 60px 0;
+    background-color: getColor('bg-footer');
 
     &__container {
-      width: $screenDesktop;
+      width: 1200px;
+      margin: 0 auto;
       @include flex(space-between);
       align-items: baseline;
+      flex-wrap: nowrap;
+      padding: 60px 0;
     }
 
-    &__input {
-      padding: 15px 157px 15px 16px;
+    &__newsletter {
+      width: fit-content;
     }
 
     &__form {
+      display: flex;
       flex-direction: row;
     }
 
-    &__socials,
-    &__contacts,
-    &__newsletter {
-      display: block;
+    &__input {
+      background-color: transparent;
+      width: 358px;
+      @include border(getColor('border-primary'));
+      border-radius: 4px;
+      margin-top: 20px;
+      color: getColor('logo-footer');
+      @include transition(border);
+      outline: none;
+
+      &:hover,
+      &:focus {
+        @include border(getColor('active'));
+      }
     }
 
     &__address {
-      gap: 9px;
+      align-items: flex-start;
+    }
+
+    &__contacts,
+    &__socials,
+    &__newsletter {
       align-items: flex-start;
     }
   }
