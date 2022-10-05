@@ -10,11 +10,11 @@
   padding-bottom: 40px;
 
   @media (min-width: $screenMobile) {
-    width: 450px;
+    max-width: 450px;
   }
 
   @media (min-width: $screenDesktop) {
-    width: 528px;
+    max-width: 528px;
   }
 
   &__btn {

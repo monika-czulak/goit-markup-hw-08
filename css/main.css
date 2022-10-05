@@ -827,12 +827,12 @@ a {
 }
 @media (min-width: 480px) {
   .modal {
-    width: 450px;
+    max-width: 450px;
   }
 }
 @media (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
   }
 }
 .modal__btn {
