@@ -315,8 +315,7 @@ a {
   gap: 30px;
 }
 .about-us > li {
-  -ms-flex-preferred-size: calc(100% - 30px);
-      flex-basis: calc(100% - 30px);
+  max-width: 450px;
 }
 .about-us__icon {
   padding: 25px 0;

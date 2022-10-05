@@ -5,7 +5,8 @@
   gap: 30px;
 
   > li {
-    flex-basis: calc(100% - 30px);
+    // flex-basis: calc(100% - 30px);
+    max-width: 450px;
   }
 
   &__icon {
