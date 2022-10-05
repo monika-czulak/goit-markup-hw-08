@@ -75,7 +75,12 @@
     margin: 0 auto;
     padding: 118px 0;
 
-    
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(getColor('bg-image'), getColor('bg-image')),
+        url('../images/img-bg@2x.jpg');
+    }
 
     @media (min-width: $screenDesktop) {
       padding: 200px 0;

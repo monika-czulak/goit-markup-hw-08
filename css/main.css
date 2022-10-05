@@ -285,6 +285,12 @@ a {
   margin: 0 auto;
   padding: 118px 0;
 }
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .section__banner {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/img-bg@2x.jpg");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/img-bg@2x.jpg");
+  }
+}
 @media (min-width: 1200px) {
   .section__banner {
     padding: 200px 0;
@@ -411,6 +417,10 @@ a {
       flex-wrap: wrap;
   gap: 30px;
 }
+.team > li {
+  width: calc(100% - 30px);
+  max-width: 450px;
+}
 .team__card {
   margin: auto 0;
   padding: 0 0 24px 0;
@@ -442,6 +452,7 @@ a {
   .team > li {
     -ms-flex-preferred-size: calc((100% - 30px) / 2);
         flex-basis: calc((100% - 30px) / 2);
+    max-width: 354px;
   }
 }
 @media (min-width: 1200px) {

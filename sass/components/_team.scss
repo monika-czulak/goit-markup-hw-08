@@ -5,6 +5,11 @@
   flex-wrap: wrap;
   gap: 30px;
 
+  > li {
+    width: calc(100% - 30px);
+    max-width: 450px;
+  }
+
   &__card {
     margin: auto 0;
     padding: 0 0 24px 0;
@@ -30,6 +35,7 @@
 
     > li {
       flex-basis: calc((100% - 1 * 30px) / 2);
+      max-width: 354px;
     }
   }
 }
