@@ -693,9 +693,6 @@ a {
   }
 }
 @media (min-width: 1200px) {
-  .footer {
-    background-color: #2f303a;
-  }
   .footer__container {
     width: 1200px;
     margin: 0 auto;

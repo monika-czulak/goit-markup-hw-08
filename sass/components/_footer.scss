@@ -100,41 +100,7 @@
 }
 
 @media (min-width: $screenDesktop) {
-  //   .footer {
-  //     padding: 60px 0;
-
-  //     &__container {
-  //       width: $screenDesktop;
-  //       @include flex(space-between);
-  //       align-items: baseline;
-  //       flex-wrap: nowrap;
-  //       padding: 0;
-  //       gap: 70px;
-  //     }
-
-  //     // &__input {
-  //     //   padding: 15px 157px 15px 16px;
-  //     // }
-
-  //     &__newsletter {
-  //       @include flex(flex-start);
-  //       align-items: flex-start;
-  //       flex-wrap: nowrap;
-  //     }
-
-  //     &__input {
-  //       padding: 15px 157px 15px 16px;
-  //     }
-
-  //     &__address {
-  //       gap: 9px;
-  //       align-items: flex-start;
-  //     }
-  //   }
-  // }
   .footer {
-    background-color: getColor('bg-footer');
-
     &__container {
       width: 1200px;
       margin: 0 auto;
