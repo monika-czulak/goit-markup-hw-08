@@ -4,12 +4,11 @@
   margin: 0 auto;
 
   &__container {
-    @include flex(center);
-    flex-direction: column;
     gap: 60px;
     padding: 60px 15px;
   }
 
+  &__container,
   &__contacts,
   &__socials,
   &__newsletter {
@@ -82,8 +81,8 @@
     &__container {
       width: $screenTablet;
       margin: 0 auto;
-      @include flex(center);
-      justify-content: space-around;
+      @include flex(space-around);
+      align-items: baseline;
       flex-direction: row;
       flex-wrap: wrap;
       gap: 60px;
@@ -135,10 +134,7 @@
       }
     }
 
-    &__address {
-      align-items: flex-start;
-    }
-
+    &__address,
     &__contacts,
     &__socials,
     &__newsletter {
